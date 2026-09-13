@@ -1,3 +1,4 @@
+import {retryAsync} from "ts-retry";
 
 export interface IProductPrice {
     readonly title: string;
@@ -5,15 +6,15 @@ export interface IProductPrice {
 }
 
 export interface IPricesLookup {
-    get(productName: string): Promise<IProductPrice>;
+    get(product: string): Promise<IProductPrice>;
 }
 
 export class PricesLookup {
-    async get(productName: string): Promise<IProductPrice> {
-        // TODO: Real implementation
-        return Promise.resolve({
-            title: productName,
-            price: 1.75,
-        });
+    async get(product: string): Promise<IProductPrice> {
+        return await retryAsync(
+            async () => fetch(`https://equalexperts.github.io/backend-take-home-test-data/${product}.json`)
+                .then(response => response.json()),
+            { delay: 100, maxTry: 5 },
+        );
     }
 }

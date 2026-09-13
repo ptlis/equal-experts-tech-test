@@ -9,10 +9,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@tsconfig/strictest": "^2.0.8"
+    "@tsconfig/strictest": "^2.0.8",
+    "ts-jest": "^29.4.12"
   },
   "dependencies": {
-    "ts-jest": "^29.4.12",
+    "ts-node": "^10.9.2",
+    "ts-retry": "^6.0.0",
     "typescript": "^6.0.3"
   }
 }
