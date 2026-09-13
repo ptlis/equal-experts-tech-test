@@ -1,7 +1,7 @@
 ## :warning: Please read these instructions carefully and entirely first
 * Clone this repository to your local machine.
 * Use your IDE of choice to complete the assignment.
-* When you have completed the assignment, you need to  push your code to this repository and [mark the assignment as completed by clicking here](https://app.snapcode.review/submission_links/20ca207b-d9bb-4fbf-8c5f-af323247b8e2).
+* When you have completed the assignment, you need to  push your code to this repository and mark the assignment as completed by clicking here.
 * Once you mark it as completed, your access to this repository will be revoked. Please make sure that you have completed the assignment and pushed all code from your local machine to this repository before you click the link.
 * There is no time limit for this task - however, for guidance, it is expected to typically take around 1-2 hours.
     
@@ -77,4 +77,3 @@ While we encourage the use of AI tools as part of the learning process but to en
 3.  **How AI-Generated Code Was Reviewed:** Explain how you reviewed and verified the AI-generated code to ensure its correctness and quality.
 
 Please note, during the technical interview, which will build upon this exercise, we'll focus on your coding abilities and problem-solving skills without the use of AI tools. This will allow us to see your direct approach and thought process.
-
