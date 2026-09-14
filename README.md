@@ -19,7 +19,6 @@ the ShoppingCart class when used in conjunction with it (i.e. accessing the real
 
 ## Considerations not addressed
  
-* When possible data has been encoded into immutable datastructures.
 * No data validation was implemented;
   * The 'add' operation should accept only positive integers as quantities.
   * As part of supporting currencies would likely want to restrict a cart to single currency only.
@@ -46,5 +45,6 @@ the ShoppingCart class when used in conjunction with it (i.e. accessing the real
 
 ## Considerations addressed
 
+* When possible data has been encoded into immutable datastructures.
 * As it was trivial to do so a retry library is included to give the prices component a basic level of robustness with
   respect to dependant service availability.
